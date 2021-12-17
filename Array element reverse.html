@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayX = [-3, 5, 1, 3, 2, 10];
+    let first = 0;
+    let last = arrayX.length - 1;
+    while (first<last){
+        let reverse = arrayX[first];    /*reverse là biến phụ để lưu giá trị của số bị đảo*/
+        arrayX[first] = arrayX[last];
+            arrayX[last] = reverse;
+        first++;
+        last--;
+    }
+    console.log(arrayX);
+    document.write(arrayX);
+</script>
+</body>
+</html>
